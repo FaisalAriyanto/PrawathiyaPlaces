@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "806436098748",
+    "firebase_url": "https://prawathiyaplaces.firebaseio.com",
+    "project_id": "prawathiyaplaces",
+    "storage_bucket": "prawathiyaplaces.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806436098748:android:f6b4c2833432b10b",
+        "android_client_info": {
+          "package_name": "pkp.faisal.prawathiyaplaces"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806436098748-n1s465qif2qgt1vsqv053d1tgjip6snh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHtmqJjjkhTMtPHUKcJNlHgeyZSjI8hHM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

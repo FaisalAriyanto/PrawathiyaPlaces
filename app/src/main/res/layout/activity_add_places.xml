@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_store"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="pkp.faisal.prawathiyaplaces.Activity.AddPlacesActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:titleTextColor="@color/white"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:subtitleTextColor="@color/white" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="Masukan Detail Tempat"
+                android:textColor="@color/primaryText"
+                android:textSize="24dp" />
+
+            <LinearLayout
+                android:id="@+id/register_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/photo_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <ImageView
+                        android:id="@+id/photo"
+                        style="@style/waveEffect"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_add_photo" />
+
+
+                    <ProgressBar
+                        android:id="@+id/splash_screen_progress_bar"
+                        style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+
+                    <EditText
+                        android:id="@+id/nama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nama"
+                        android:maxLines="1"
+                        android:textColorHint="@color/colorAccent" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+                    <EditText
+                        android:id="@+id/desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Vicinity"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textColorHint="@color/colorAccent" />
+                </android.support.design.widget.TextInputLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:id="@+id/pilih_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="4dp"
+                        android:text="Pilih Kategori"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/category_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="Pilih"
+                        android:theme="@style/AppTheme.Button" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tingkat_lanjut"
+                    style="@style/waveEffect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="24dp"
+                    android:text="Mode tingkat lanjut"
+                    android:textSize="10dp"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
